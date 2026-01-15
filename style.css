@@ -1,35 +1,35 @@
 /* --- 1. THEME VARIABLES --- */
 :root {
-    /* Light Mode (Default) */
-    --bg-color: #ffffff;
-    --text-color: #333333;
-    --heading-color: #000000;
-    --nav-bg: rgba(255, 255, 255, 0.95);
-    --border-color: #e0e0e0;
-    --accent-color: #0e6e55; /* Your CV Green */
-    --accent-hover: #094a39;
-    --secondary-text: #666666;
-    --code-bg: #f4f4f4;
-}
-
-[data-theme="dark"] {
-    /* Dark Mode */
+    /* DARK MODE (NOW DEFAULT) */
     --bg-color: #121212;
     --text-color: #e0e0e0;
     --heading-color: #ffffff;
     --nav-bg: rgba(18, 18, 18, 0.95);
     --border-color: #333333;
-    --accent-color: #4db6ac; /* Lighter Green for contrast */
+    --accent-color: #4db6ac; /* Lighter Green for Dark Mode */
     --accent-hover: #80cbc4;
     --secondary-text: #a0a0a0;
     --code-bg: #1e1e1e;
+}
+
+[data-theme="light"] {
+    /* LIGHT MODE (Secondary) */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --heading-color: #000000;
+    --nav-bg: rgba(255, 255, 255, 0.95);
+    --border-color: #e0e0e0;
+    --accent-color: #0e6e55; /* Darker Green for Light Mode */
+    --accent-hover: #094a39;
+    --secondary-text: #666666;
+    --code-bg: #f4f4f4;
 }
 
 /* --- 2. GLOBAL STYLES --- */
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: 'Roboto', sans-serif; /* Standard academic font */
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: 1.6;
     margin: 0;
@@ -149,7 +149,7 @@ header {
     width: 200px;
     height: 200px;
     object-fit: cover;
-    border-radius: 5px; /* Slight round like al-folio */
+    border-radius: 5px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.15);
 }
 
@@ -215,13 +215,13 @@ h2 {
     text-decoration: none;
 }
 
-/* Social Icons */
+/* Social Icons - UPDATED SIZE HERE */
 .social-icons {
     margin-top: 25px;
-    font-size: 3.5rem;
+    font-size: 2.5rem; /* Increased size as requested */
 }
 .social-icons a {
-    margin-right: 15px;
+    margin-right: 20px;
     color: var(--secondary-text);
 }
 .social-icons a:hover {
