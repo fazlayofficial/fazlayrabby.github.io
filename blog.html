@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Fazlay Rabby</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Fazlay Rabby</a>
+            <ul class="nav-links">
+                <li><a href="index.html">About</a></li>
+                <li><a href="blog.html" class="active">Blog</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.pdf" target="_blank">CV</a></li>
+                <li>
+                    <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        
+        <h1 style="font-family: 'Roboto Slab'; margin-top: 40px; color: var(--heading-color);">Blog</h1>
+        <p style="margin-bottom: 40px; color: var(--secondary-text);">Thoughts on TinyML, Research, and Systems.</p>
+
+        <!-- Using the same Table style as News for the Blog list, similar to al-folio -->
+        <table class="news-table">
+            <tr>
+                <th>Jan 15, 2026</th>
+                <td><a href="#">The Future of Edge AI in Healthcare</a></td>
+            </tr>
+            <tr>
+                <th>Dec 20, 2025</th>
+                <td><a href="#">Setting up the Tiny Neurons Research Group</a></td>
+            </tr>
+            <tr>
+                <th>Oct 05, 2025</th>
+                <td><a href="#">Understanding Quantization in TensorFlow Lite</a></td>
+            </tr>
+        </table>
+
+    </div>
+
+    <footer>
+        &copy; 2026 Fazlay Rabby. Based in Dhaka, Bangladesh.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

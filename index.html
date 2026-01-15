@@ -1,311 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fazlay Rabby - Academic Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        :root {
-            --primary: #0e6e55; /* Matches your CV Green */
-            --accent: #a16f0b;  /* Matches your CV Gold */
-            --bg: #ffffff;
-            --text: #333333;
-            --light-gray: #f4f4f4;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text);
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Container */
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-
-        /* Header */
-        header {
-            padding: 40px 0;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-            gap: 30px;
-        }
-
-        .profile-img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 3px solid var(--primary);
-        }
-
-        .header-content h1 {
-            margin: 0;
-            color: var(--primary);
-            font-size: 2.5rem;
-        }
-
-        .header-content p {
-            margin: 5px 0;
-            font-size: 1.1rem;
-            color: #555;
-        }
-
-        .social-links a {
-            color: var(--text);
-            margin-right: 15px;
-            font-size: 1.2rem;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-
-        .social-links a:hover {
-            color: var(--primary);
-        }
-
-        /* Sections */
-        section {
-            padding: 30px 0;
-        }
-
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--accent);
-            display: inline-block;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
-
-        /* News */
-        .news-item {
-            margin-bottom: 10px;
-        }
-        .date {
-            font-weight: bold;
-            color: var(--accent);
-            margin-right: 10px;
-        }
-
-        /* Publications */
-        .pub-item {
-            margin-bottom: 15px;
-            padding-left: 15px;
-            border-left: 3px solid var(--primary);
-        }
-        .pub-title {
-            font-weight: bold;
-        }
-        .pub-journal {
-            font-style: italic;
-            color: #666;
-        }
-        .btn-link {
-            display: inline-block;
-            font-size: 0.8rem;
-            background: var(--light-gray);
-            padding: 2px 8px;
-            border-radius: 4px;
-            text-decoration: none;
-            color: var(--text);
-            margin-top: 5px;
-        }
-        .btn-link:hover {
-            background: var(--primary);
-            color: white;
-        }
-
-        /* Projects Grid */
-        .project-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-        }
-
-        .project-card {
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
-
-        .project-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
-
-        .project-img {
-            width: 100%;
-            height: 180px;
-            background-color: #eee;
-            object-fit: cover;
-            /* Placeholder styling */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #888;
-        }
-
-        .project-content {
-            padding: 15px;
-        }
-
-        .project-title {
-            font-weight: bold;
-            color: var(--primary);
-            margin-bottom: 5px;
-        }
-
-        .tags span {
-            font-size: 0.75rem;
-            background: var(--light-gray);
-            padding: 2px 6px;
-            border-radius: 4px;
-            margin-right: 5px;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #777;
-            font-size: 0.9rem;
-            border-top: 1px solid #ddd;
-        }
-
-        /* Mobile */
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-        }
-    </style>
+    <title>Fazlay Rabby - Home</title>
+    
+    <!-- Icons (FontAwesome) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="container">
-    
+    <!-- NAVIGATION -->
     <header>
-        <img src="pp.png" alt="Fazlay Rabby" class="profile-img">
-        <div class="header-content">
-            <h1>Fazlay Rabby</h1>
-            <p>Researcher in Edge AI, TinyML & Healthcare Microsystems</p>
-            <p><i>Aspiring Ph.D. Candidate | Based in Dhaka, Bangladesh</i></p>
-            
-            <div class="social-links">
-                <a href="mailto:fazlay.rabby.official@gmail.com"><i class="fas fa-envelope"></i> Email</a>
-                <a href="https://scholar.google.com/citations?hl=en&user=DhNowuUAAAAJ"><i class="fas fa-graduation-cap"></i> Scholar</a>
-                <a href="https://www.linkedin.com/in/fazlayrabbyofficial/"><i class="fab fa-linkedin"></i> LinkedIn</a>
-                <a href="#"><i class="fab fa-github"></i> GitHub</a>
-                <a href="#" style="color: var(--accent); font-weight: bold;"><i class="fas fa-file-pdf"></i> Download CV</a>
-            </div>
-        </div>
+        <nav class="navbar">
+            <a href="index.html" class="nav-brand">Fazlay Rabby</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="Resume.pdf" target="_blank">CV</a></li>
+                <li>
+                    <button id="theme-toggle" aria-label="Toggle Dark Mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </nav>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            I am an Electrical and Electronic Engineering graduate with a focus on <strong>Embedded Machine Learning (TinyML)</strong> and <strong>Biomedical Signal Processing</strong>. 
-            I am currently leading the "Tiny Neurons Research Group," bridging the gap between deep learning theory and resource-constrained hardware implementation.
-        </p>
-        <p>
-            My research aim is to develop cost-effective, energy-efficient microsystems for healthcare monitoring in low-resource settings. I am actively seeking <strong>Ph.D. opportunities</strong> for Fall 2026.
-        </p>
-    </section>
-
-    <section id="news">
-        <h2>Recent Updates</h2>
-        <div class="news-item">
-            <span class="date">Jan 2026</span> Submitted paper on LoRa-based Elderly Safety to <i>Wiley Engineering Reports</i>.
-        </div>
-        <div class="news-item">
-            <span class="date">Dec 2025</span> Started development on "SmartBowel Wear" utilizing Edge Impulse and BLE.
-        </div>
-        <div class="news-item">
-            <span class="date">Mar 2025</span> Founded "Tiny Neurons Research Group" to mentor undergraduates in Edge AI.
-        </div>
-    </section>
-
-    <section id="publications">
-        <h2>Selected Publications</h2>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
         
-        <div class="pub-item">
-            <div class="pub-title">A Pilot Feasibility Study of a Secure, Low-Latency LoRaWAN Wearable for Elderly Care</div>
-            <div class="pub-journal">Submitted to Wiley Engineering Reports (Under Review), 2025</div>
-            <a href="#" class="btn-link">Preprint</a>
-        </div>
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-name">Fazlay Rabby</h1>
+                <p class="hero-subtitle">Researcher in Edge AI, TinyML & Healthcare Microsystems</p>
+                
+                <p>
+                    I am an Electrical and Electronic Engineering graduate with a focus on <strong>Embedded Machine Learning (TinyML)</strong> and <strong>Biomedical Signal Processing</strong>. 
+                </p>
+                <p>
+                    Currently, I lead the <em>"Tiny Neurons Research Group"</em>, bridging the gap between deep learning theory and resource-constrained hardware implementation. My goal is to develop cost-effective, energy-efficient microsystems for healthcare in low-resource settings.
+                </p>
+                <p>
+                    I am actively seeking <strong>Ph.D. opportunities</strong> for Fall 2026.
+                </p>
 
-        <div class="pub-item">
-            <div class="pub-title">Preeclampsia Prediction Using Machine Learning with Electronic Medical Records</div>
-            <div class="pub-journal">IEEE NCIM 2025</div>
-            <a href="https://ieeexplore.ieee.org/document/11160134" class="btn-link">IEEE Xplore</a>
-        </div>
-
-        <div class="pub-item">
-            <div class="pub-title">Scalable Hand Gesture Recognition from sEMG Signals using Hybrid Deep Learning</div>
-            <div class="pub-journal">IEEE ICEEIE 2025</div>
-            <a href="https://ieeexplore.ieee.org/document/11252161" class="btn-link">IEEE Xplore</a>
-        </div>
-    </section>
-
-    <section id="projects">
-        <h2>Research Projects</h2>
-        <div class="project-grid">
+                <div class="social-icons">
+                    <a href="mailto:fazlay.rabby.official@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?hl=en&user=DhNowuUAAAAJ"><i class="fas fa-graduation-cap"></i></a>
+                    <a href="https://www.linkedin.com/in/fazlayrabbyofficial/"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
             
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x200?text=LoRa+Hardware+Prototype" alt="LoRa Device" class="project-img">
-                <div class="project-content">
-                    <div class="project-title">LoRa Elderly Safety Wearable</div>
-                    <div class="tags">
-                        <span>ESP32</span> <span>LoRaWAN</span> <span>AES-128</span>
-                    </div>
-                    <p style="font-size: 0.9rem; margin-top: 10px;">
-                        Designed a wearable fall-detection node achieving sub-3s latency and 6km range in rural settings. Optimized for low power consumption.
-                    </p>
+            <!-- PROFILE IMAGE (Must be named pp.png) -->
+            <img src="pp.png" alt="Fazlay Rabby" class="profile-img">
+        </section>
+
+        <!-- NEWS SECTION -->
+        <section>
+            <h2>News</h2>
+            <table class="news-table">
+                <tr>
+                    <th>Jan 2026</th>
+                    <td>Submitted paper on LoRa-based Elderly Safety to <i>Wiley Engineering Reports</i>.</td>
+                </tr>
+                <tr>
+                    <th>Dec 2025</th>
+                    <td>Started development on "SmartBowel Wear" utilizing Edge Impulse and BLE.</td>
+                </tr>
+                <tr>
+                    <th>Mar 2025</th>
+                    <td>Founded "Tiny Neurons Research Group" to mentor undergraduates in Edge AI.</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- RESEARCH INTERESTS / PROJECTS -->
+        <section>
+            <h2>Research Projects</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+                <!-- Project 1 -->
+                <div style="background: var(--code-bg); padding: 15px; border-radius: 8px;">
+                    <h3 style="margin-top:0; font-size:1.1rem; color: var(--heading-color);">LoRa Elderly Safety</h3>
+                    <p style="font-size: 0.9rem;">Designed a wearable fall-detection node achieving sub-3s latency and 6km range in rural settings.</p>
+                </div>
+                <!-- Project 2 -->
+                <div style="background: var(--code-bg); padding: 15px; border-radius: 8px;">
+                    <h3 style="margin-top:0; font-size:1.1rem; color: var(--heading-color);">sEMG Robotic Wheelchair</h3>
+                    <p style="font-size: 0.9rem;">Adaptive TinyML framework controlling a wheelchair via EMG signals. Uses int8 quantization.</p>
                 </div>
             </div>
+        </section>
 
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x200?text=STM32+Wheelchair" alt="Wheelchair" class="project-img">
-                <div class="project-content">
-                    <div class="project-title">sEMG Robotic Wheelchair</div>
-                    <div class="tags">
-                        <span>TinyML</span> <span>STM32</span> <span>Robotics</span>
-                    </div>
-                    <p style="font-size: 0.9rem; margin-top: 10px;">
-                        Adaptive TinyML framework controlling a wheelchair via EMG signals. Uses int8 quantization for <100ms latency on Cortex-M7.
-                    </p>
-                </div>
-            </div>
+    </div>
 
-            <div class="project-card">
-                <img src="https://via.placeholder.com/400x200?text=Glycemic+Forecasting" alt="Glycemic AI" class="project-img">
-                <div class="project-content">
-                    <div class="project-title">Glycemic Event Forecasting</div>
-                    <div class="tags">
-                        <span>TensorFlow Lite</span> <span>Time-Series</span> <span>SHAP</span>
-                    </div>
-                    <p style="font-size: 0.9rem; margin-top: 10px;">
-                        Forecasting hypoglycemia using CGM data on edge devices. Implemented FP16 quantization for wearable deployment.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+    <!-- FOOTER -->
     <footer>
-        &copy; 2026 Fazlay Rabby. Built with HTML/CSS.
+        &copy; 2026 Fazlay Rabby. Based in Dhaka, Bangladesh.
     </footer>
 
-</div>
-
+    <!-- JS SCRIPT -->
+    <script src="script.js"></script>
 </body>
 </html>
